@@ -1,5 +1,7 @@
 "use client";
 import { TypeAnimation } from "react-type-animation";
+import Password from "./components/password";
+import Qrcode from "./components/qrcode";
 
 export default function Home() {
   const type = ["Passwords", "QRCodes", "Lorem Ipsum"];
@@ -46,51 +48,8 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full h-full p-4 bg-gray-200">
-        <div className="">
-          <div className="text-3xl font-medium">Password Generator</div>
-          <div className="bg-white p-4 rounded-xl grid grid-cols-3 gap-10 w-full">
-            <div>
-              <h1>Password Length</h1>
-              <input
-                type="number"
-                min="1"
-                max="100"
-                placeholder="6"
-                className="border p-2 w-full"
-              />
-            </div>
-            <div className="">
-              <div className="flex items-center gap-1">
-                <input id="Token" type="radio" className="w-4 h-4" />
-                <label htmlFor="Token">Token</label>
-              </div>
-              <div className="flex items-center gap-1">
-                <input id="StrongPassword" type="radio" className="w-4 h-4" />
-                <label htmlFor="StrongPassword">Strong Password</label>
-              </div>
-            </div>
-            <div>
-              <div className="flex items-center gap-1">
-                <input id="Uppercase" type="checkbox" className="w-4 h-4" />
-                <label htmlFor="Uppercase">Uppercase</label>
-              </div>
-              <div className="flex items-center gap-1">
-                <input id="Lowercase" type="checkbox" className="w-4 h-4" />
-                <label htmlFor="Lowercase">Lowercase</label>
-              </div>
-              <div className="flex items-center gap-1">
-                <input id="Numbers" type="checkbox" className="w-4 h-4" />
-                <label htmlFor="Numbers">Numbers</label>
-              </div>
-              <div className="flex items-center gap-1">
-                <input id="Symbols" type="checkbox" className="w-4 h-4" />
-                <label htmlFor="Symbols">Symbols</label>
-              </div>
-            </div>
-          </div>
-          <div>Password</div>
-          <div>Password</div>
-        </div>
+        {/* <Password /> */}
+        <Qrcode />
       </div>
     </main>
   );

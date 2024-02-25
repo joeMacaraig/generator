@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Password() {
   return (
-    <div className="h-full">
-      <div className="text-3xl font-medium mb-4">Password Generator</div>
+    <div className="h-full p-4">
+      <div className="text-3xl font-medium mb-4">Passwords</div>
       <div className="bg-white p-4 rounded-xl grid grid-cols-3 gap-10 w-full">
         <div className="w-full">
           <h1 className="mb-2">Password Length</h1>
@@ -35,14 +35,21 @@ export default function Password() {
           </div>
         </div>
         {/* Password Strength */}
-        <div className="w-full">
-          <h1>Strengh:</h1>
-          <div className="w-full grid grid-cols-3 gap-2">
-            <div className="w-full p-1 bg-black"></div>
-            <div className="w-full p-1 bg-black"></div>
-            <div className="w-full p-1 bg-black"></div>
+        <div className="w-full h-full flex flex-col justify-between px-2">
+          <div className="">
+            <h1>Strengh:</h1>
+            <div className="w-full grid grid-cols-3 gap-1">
+              <div className="w-full p-1 bg-black"></div>
+              <div className="w-full p-1 bg-black"></div>
+              <div className="w-full p-1  bg-black"></div>
+            </div>
           </div>
-          <div></div>
+          <button
+            className="border py-2 px-4 bg-black text-white hover:rounded-lg duration-500 hover:bg-green-600
+          hover:-translate-y-1 "
+          >
+            Generate
+          </button>
         </div>
       </div>
       <div className="flex flex-col gap-4">

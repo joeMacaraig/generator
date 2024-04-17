@@ -1,8 +1,8 @@
 "use client";
 
-import { Colors } from "@/components/colors";
-import { QRCodes } from "@/components/qrcodes";
-import { Passwords } from "@/components/passwords";
+import { Colors } from "./components/colors";
+import { QRCodes } from "./components/qrcodes";
+import { Passwords } from "./components/passwords";
 import { useState } from "react";
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-[90vh] p-8 flex flex-col items-center">
       <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
-      <div className="w-[85%]">
+      <div className="w-[90%] max-w-6xl mx-auto">
         <div className="flex justify-between">
           {tabs.map((item) => (
             <button

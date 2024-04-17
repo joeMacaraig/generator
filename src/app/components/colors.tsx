@@ -49,13 +49,13 @@ export const Colors = () => {
       <div className="w-full grid grid-cols-2 gap-4 place-items-center">
         <button
           onClick={() => setType("hex")}
-          className="border-black border-2 py-2 px-8"
+          className="border-black border-2 py-2 px-8 bg-black text-white font-medium rounded-lg"
         >
           HEX
         </button>
         <button
           onClick={() => setType("rgb")}
-          className="border-black border-2 py-2 px-8"
+          className="border-black border-2 py-2 px-8 bg-black text-white font-medium rounded-lg"
         >
           RGB
         </button>

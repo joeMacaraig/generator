@@ -16,8 +16,8 @@ export const QRCodes = () => {
   };
   return (
     <section className="flex flex-col gap-8 items-center p-4 h-full">
-      <h1 className="text-2xl font-medium">QRCodes</h1>
-      <p className="font-medium">
+      <h1 className="text-base sm:text-2xl font-medium ">QRCodes</h1>
+      <p className="font-medium text-center text-sm sm:text-base">
         Generate your own QRCode by typing in a valid url ✨
       </p>
 

@@ -9,8 +9,7 @@ export default function Home() {
   const [screen, setScreen] = useState<string>("Colors");
   const tabs = ["Colors", "QRCodes", "Passwords"];
   return (
-    <main className="h-full p-4 flex flex-col items-center">
-      <div className="absolute inset-0 -z-10 h-full w-full bg-white bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
+    <main className="h-screen p-4 flex flex-col items-center justify-center">
       <div className="w-[90%]">
         <div className="flex justify-between">
           {tabs.map((item, idx) => (

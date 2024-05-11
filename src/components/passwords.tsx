@@ -58,13 +58,13 @@ export const Passwords = () => {
   };
   return (
     <section className="flex flex-col gap-8 items-center p-4 h-full">
-      <h1 className="font-medium text-2xl">Passwords</h1>
-      <p className="font-medium">
+      <h1 className="font-medium text-base sm:text-2xl">Passwords</h1>
+      <p className="font-medium text-center text-sm sm:text-base">
         Generate a password, the longer and more complex the more secure. 🔒
       </p>
       <div className="h-full border-2 w-full items-center flex flex-col">
         <div className="flex flex-col p-4 gap-4">
-          <div className="flex items-center gap-2 font-medium">
+          <div className="flex items-center gap-2 font-medium pt-4">
             <input
               type="number"
               min={7}

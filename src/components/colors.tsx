@@ -43,8 +43,8 @@ export const Colors = () => {
 
   return (
     <section className="flex flex-col gap-4 items-center p-4 h-full">
-      <h1 className="sm:text-2xl text-normal font-medium">Colors</h1>
-      <p className="text-sm sm:text-base font-medium">Generate colors with hex values or rgb values ✨</p>
+      <h1 className="sm:text-2xl text-base font-medium">Colors</h1>
+      <p className="text-sm sm:text-base font-medium text-center">Generate colors with hex values or rgb values ✨</p>
       <div className="w-full grid grid-cols-2 gap-4 place-items-center">
         <div className="relative group">
           <div className="absolute -inset-0.5 px-4 py-4 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 blur group-hover:blur-lg transition duration-500"></div>

@@ -2,15 +2,14 @@
 
 import { useEffect, useState } from "react";
 import { BsStars, BsCopy } from "react-icons/bs";
-import { BiCopy } from "react-icons/bi";
 export const Colors = () => {
   const [type, setType] = useState<string>("hex");
   const [color, setColor] = useState<string>("#000000");
 
   const copy = () => {
     navigator.clipboard.writeText(color);
-    alert("Copied Color ✅")
-  }
+    alert("Copied Color ✅");
+  };
 
   //random color
   const randomColor = (length: number) => {
@@ -47,18 +46,27 @@ export const Colors = () => {
       <h1 className="text-2xl font-medium">Colors</h1>
       <p>Generate colors with hex values or rgb values ✨</p>
       <div className="w-full grid grid-cols-2 gap-4 place-items-center">
-        <button
-          onClick={() => setType("hex")}
-          className="border-black border-2 py-2 px-8"
-        >
-          HEX
-        </button>
-        <button
-          onClick={() => setType("rgb")}
-          className="border-black border-2 py-2 px-8"
-        >
-          RGB
-        </button>
+        <div className="relative group">
+          <div className="absolute -inset-0.5 px-4 py-4 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 blur group-hover:blur-lg transition duration-500"></div>
+          <button
+            onClick={() => setType("hex")}
+            className="border-black border-2 py-2 px-8 relative bg-black text-white hover:text-amber-500"
+          >
+            HEX
+          </button>
+        </div>
+
+        <div className="relative group">
+          <div className="absolute -inset-0.5 px-4 py-4 bg-gradient-to-r from-red-600 via-blue-600 to-green-600 blur group-hover:blur-lg transition duration-500"></div>
+          <button
+            onClick={() => setType("rgb")}
+            className="border-black border-2 py-2 px-8 relative bg-black text-white"
+          >
+            <span className="group-hover:text-red-400">R</span>
+            <span className="group-hover:text-green-400">G</span>
+            <span className="group-hover:text-blue-400">B</span>
+          </button>
+        </div>
       </div>
       <div className="h-[45vh] border w-full">
         <div

@@ -116,7 +116,7 @@ export const Passwords = () => {
           {password ? password : "generate a password!"}
         </p>
       </div>
-      <div className="w-full flex gap-2 items-center">
+      <div className="w-full flex gap-2 items-center pb-4">
         <button
           className="px-6 py-2 bg-black text-white flex items-center justify-center gap-1 rounded-full w-full group duration-400 hover:bg-zinc-800"
           onClick={generatePassword}

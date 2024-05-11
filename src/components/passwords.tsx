@@ -57,7 +57,7 @@ export const Passwords = () => {
     setPassword(newPassword);
   };
   return (
-    <section className="flex flex-col gap-8 items-center p-4">
+    <section className="flex flex-col gap-8 items-center p-4 h-full">
       <h1 className="font-medium text-2xl">Passwords</h1>
       <p className="font-medium">
         Generate a password, the longer and more complex the more secure. 🔒

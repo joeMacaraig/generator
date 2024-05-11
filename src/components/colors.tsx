@@ -42,7 +42,7 @@ export const Colors = () => {
   }, [type]);
 
   return (
-    <section className="flex flex-col gap-4 items-center p-4">
+    <section className="flex flex-col gap-4 items-center p-4 h-full">
       <h1 className="sm:text-2xl text-normal font-medium">Colors</h1>
       <p className="text-sm sm:text-base font-medium">Generate colors with hex values or rgb values ✨</p>
       <div className="w-full grid grid-cols-2 gap-4 place-items-center">

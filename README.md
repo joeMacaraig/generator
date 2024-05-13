@@ -1,3 +1,10 @@
+# Generator
+
+Generator is a open-source where users can generate qrcodes, colors, and passwords.
+
+## 👨🏽‍💻:
+Next.js, React.js, Typescript, TailwindCSS 
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
